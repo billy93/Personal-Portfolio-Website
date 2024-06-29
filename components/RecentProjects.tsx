@@ -5,8 +5,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects, otherProjects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import { InfiniteWorkCards } from "./ui/InfiniteWorkCards";
+import MagicButton from "./MagicButton";
+import { useState } from "react";
 
 const RecentProjects = () => {
+  const [max, setMax] = useState<number>(4);
   const handleDivClick = (item: any) => {
     window.open(item.link, '_blank');
   };
@@ -15,10 +18,10 @@ const RecentProjects = () => {
       <div className="py-20">
         <h1 className="heading">
           Here are my&nbsp;
-          <span className="text-purple">Awesome Works</span>
+          <span className="text-purple">Amazing Works</span>
         </h1>
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-          {projects.map((item) => (
+          {projects.slice(0,max).map((item) => (
               <div onClick={() => handleDivClick(item)} 
                 className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
                 key={item.id}
@@ -80,8 +83,19 @@ const RecentProjects = () => {
                 </PinContainer>
               </div>
           ))}
+
         </div>
 
+            <div className="flex flex-wrap justify-center items-center">
+            <MagicButton
+                title={max >= projects.length ? "Time to Showcase Yours" : "View more"}
+                icon={null}
+                position="right"
+                handleClick={() => {
+                  setMax(max+4);
+                }}
+              />
+            </div>
           {/* <div className="flex flex-col items-center max-lg:mt-10">
             <div
               // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design

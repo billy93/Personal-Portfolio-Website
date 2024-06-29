@@ -1,7 +1,8 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience"},
+  // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -100,8 +101,56 @@ export const projects = [
     title: "Devlegion.io",
     des: "Developed a web application that allows clients to view reports on the work completed",
     img: "/porto4.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
     link: "https://devlegion.io",
+  },
+  {
+    id: 5,
+    title: "onxdc.io",
+    des: "Developed a A Central HUB for the XDC Community",
+    img: "/porto5.png",
+    iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
+    link: "https://onxdc.io",
+  },
+  {
+    id: 6,
+    title: "d0p3clubnft",
+    des: "Developed a UI Project to minting NFT",
+    img: "/porto6.png",
+    iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
+    link: "https://www.d0p3clubnft.com",
+  },
+  {
+    id: 6,
+    title: "Ebase",
+    des: "Developed a UI Project to staking token",
+    img: "/porto7.png",
+    iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
+    link: "https://ebase-qa.vercel.app"
+  },
+  {
+    id: 7,
+    title: "Trublox",
+    des: "Developed a platform for integrating NFTs into legal documents.",
+    img: "/porto8.png",
+    iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
+    link: "https://trublox-ui.vercel.app"
+  },
+  {
+    id: 8,
+    title: "Anime Banks",
+    des: "Developed Anime Banks, a personal project showcasing a list of popular anime titles",
+    img: "/porto9.png",
+    iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
+    link: "https://anime-banks.vercel.app"
+  },
+    {
+    id: 8,
+    title: "Nike Landing Page",
+    des: "Developed a personal project, the Nike Clone, to replicate the user interface and functionality of the Nike website",
+    img: "/porto10.png",
+    iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
+    link: "https://nike-clone-dusky.vercel.app/"
   },
 ];
 
