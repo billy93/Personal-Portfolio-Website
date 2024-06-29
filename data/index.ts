@@ -8,12 +8,12 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Explore my portfolio to see what I can do",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] ", 
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/work.png",
     spareImg: "",
   },
   {
@@ -49,8 +49,9 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    // title: "I am an experienced Frontend Developer proficient in Next.js and React.js. My expertise in Tailwind CSS allows me to craft visually appealing and highly functional designs.",
+    description: "Who am I?",
+    title: "I am a dedicated frontend developer with a passion for creating seamless web experiences",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -72,36 +73,70 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Amanyaman Sales Travel Insurance",
+    des: "Developed the App for Amanyaman, a travel insurance company, enabling travel agents to offer various travel insurance plans. The application supports personal, family, and group insurance options for both domestic and international travel",
+    img: "/porto1.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/chakra.svg"],
+    link: "https://sales-amanyaman.vercel.app",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Agrodana Client Area",
+    des: "Developed the Client Area website application, serving as a portal for users to log in and create trading accounts. The application integrates with MetaTrader 4 and MetaTrader 5, allowing users to deposit and withdraw trading profits seamlessly.",
+    img: "/porto2.png",
+    iconLists: ["/thymeleaf.png", "/springio-icon.svg", "/java.svg"],
+    link: "https://clientarea.agrodana-futures.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Blockleader.io",
+    des: "BlockLeader.io, a comprehensive platform highlighting our team's portfolio",
+    img: "/porto3.png",
+    iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
+    link: "https://blockleader.io",
   },
   {
     id: 4,
+    title: "Devlegion.io",
+    des: "Developed a web application that allows clients to view reports on the work completed",
+    img: "/porto4.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://devlegion.io",
+  },
+];
+
+export const otherProjects = [
+  {
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
   },
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Michael Johnson",
+  //   title: "Director of AlphaStream Technologies",
+  // },
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Michael Johnson",
+  //   title: "Director of AlphaStream Technologies",
+  // },
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Michael Johnson",
+  //   title: "Director of AlphaStream Technologies",
+  // },
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Michael Johnson",
+  //   title: "Director of AlphaStream Technologies",
+  // },
 ];
 
 export const testimonials = [
@@ -176,35 +211,53 @@ export const workExperience = [
     title: "Fullstack Developer",
     company: "ATI Business Group",
     date: "December 2015 - Now",
-    desc: "Designed and developed RESTful APIs and microservices using Java and Node.js, ensuring high performance and scalability Implemented frontend solutions with React and Next.js, focusing on responsive design and optimized user experiences.",
+    desc: "Designed and developed RESTful APIs and microservices using Java Spring Boot, ensuring high performance and scalability. Implemented frontend solutions with React and Next.js.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.png",
   },
   {
     id: 3,
-    title: "Freelance Frontend Project",
-    company: "Personal",
+    title: "Frontend Developer (Remote)",
+    company: "Freelance",
     desc: "Converted Figma designs into clean and efficient React components for web applications. Communicated effectively with clients worldwide to understand and meet design expectations.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp1.svg",
   },
   {
     id: 4,
-    title: "Lead Developer",
+    title: "Lead Developer (Remote)",
     company: "Blockleader.io",
-    date: "December 2015 - Now",
+    date: "March 2021 - March 2023",
     desc: "Managed a team of frontend and backend developers, ensuring code quality, performance, and adherence to project timelines.",
     className: "md:col-span-2",
     thumbnail: "/exp3.png",
   },
   {
     id: 1,
-    title: "Frontend Developer",
+    title: "Frontend Developer (Remote)",
     company: "Rootkit.finance",
-    date: "December 2015 - Now",
+    date: "September 2020 - March 2021",
     desc: "Developed and maintained web applications using HTML, CSS, JavaScript, and frameworks like React.js and Next.js.",
     className: "md:col-span-2",
     thumbnail: "/exp1.png",
+  },
+  {
+    id: 5,
+    title: "Android Developer",
+    company: "Adfin Bureau Indonesia",
+    date: "January 2015 - December 2015",
+    desc: "Design, implement and maintain Java Android Application. Take part in software and architectural development activities",
+    className: "md:col-span-2",
+    thumbnail: "/exp5.png",
+  },
+    {
+    id: 5,
+    title: "Frontend Developer",
+    company: "Carsurin",
+    date: "December 2012 - December 2013",
+    desc: "Design, implement Laboratory Information Management System using HTML, CSS, Javascript and jQUery",
+    className: "md:col-span-2",
+    thumbnail: "/exp6.png",
   },
 
 ];

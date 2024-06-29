@@ -52,13 +52,13 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Hi! I'm Andreas Billy, a Next.js Developer based in Indonesia."
+            words="Hi! I'm Andreas Billy, a Next.js Developer from Indonesia."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          {/* <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Andreas Billy, a Next.js Developer based in <img className="inline align-baseline" src="/flag.svg" width={"30px"} height={"20px"}></img> Indonesia.
-          </p> */}
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Let's build something awesome together.
+          </p>
 
           <a href="#about">
             <MagicButton

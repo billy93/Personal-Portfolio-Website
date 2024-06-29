@@ -29,6 +29,7 @@ export function Button({
   className?: string;
   [key: string]: any;
 }) {
+  let color = otherProps.key == "0" ? "bg-[radial-gradient(#FF0000_40%,transparent_60%)]" : "bg-[radial-gradient(#CBACF9_40%,transparent_60%)]";
   return (
     <Component
       className={cn(
@@ -48,7 +49,8 @@ export function Button({
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
             className={cn(
-              "h-20 w-20 opacity-[0.8] bg-[radial-gradient(#CBACF9_40%,transparent_60%)]",
+              "h-20 w-20 opacity-[0.8]",
+              color,
               borderClassName
             )}
           />
