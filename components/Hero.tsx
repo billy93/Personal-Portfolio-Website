@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Let's build something awesome together.
+            Let&apos;s build something awesome together.
           </p>
 
           <a href="#about">
