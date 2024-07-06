@@ -23,24 +23,18 @@ const RecentProjects = () => {
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
           {projects.slice(0,max).map((item) => (
               <div onClick={() => handleDivClick(item)} 
-                className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+                className="h-[25rem] flex items-center justify-center sm:w-[36rem] w-[80vw] mt-20"
                 key={item.id}
               >
                 <PinContainer
                   title={item.title}
-                  href="https://twitter.com/mannupaaji"
+                  href="https://twitter.com/billy_impact"
                 >
-                  <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                    <div
-                      className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                      style={{ backgroundColor: "#13162D" }}
-                    >
-                      <img src="/bg.png" alt="bgimg" />
-                    </div>
+                  <div className="relative flex items-center justify-center sm:w-[36rem] w-[80vw] h-[30vh] overflow-hidden mb-10">
                     <img
                       src={item.img}
                       alt="cover"
-                      className="z-10 absolute bottom-0"
+                      className="z-10"
                     />
                   </div>
 
@@ -86,13 +80,18 @@ const RecentProjects = () => {
 
         </div>
 
-            <div className="flex flex-wrap justify-center items-center">
+            <div className="flex flex-wrap justify-center items-center mt-10">
             <MagicButton
                 title={max >= projects.length ? "Time to Showcase Yours" : "View more"}
                 icon={null}
                 position="right"
                 handleClick={() => {
-                  setMax(max+4);
+                  if(max >= projects.length){
+                    
+                  }
+                  else{
+                    setMax(max+4);
+                  }
                 }}
               />
             </div>

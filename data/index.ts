@@ -123,7 +123,7 @@ export const projects = [
   {
     id: 6,
     title: "Ebase",
-    des: "Developed a UI Project to staking token",
+    des: "Developed a web application that allows user to interact smart contract from web UI",
     img: "/porto7.png",
     iconLists: ["/next.svg", "/re.svg", "/css.svg", "/ts.svg"],
     link: "https://ebase-qa.vercel.app"
