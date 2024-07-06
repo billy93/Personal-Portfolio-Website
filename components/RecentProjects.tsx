@@ -30,7 +30,7 @@ const RecentProjects = () => {
                   title={item.title}
                   href="https://twitter.com/billy_impact"
                 >
-                  <div className="relative flex items-center justify-center sm:w-[36rem] w-[80vw] h-[30vh] overflow-hidden mb-10">
+                  <div className="relative flex items-center justify-center sm:w-[36rem] w-[80vw] overflow-hidden mb-10">
                     <img
                       src={item.img}
                       alt="cover"
@@ -87,7 +87,7 @@ const RecentProjects = () => {
                 position="right"
                 handleClick={() => {
                   if(max >= projects.length){
-                    
+
                   }
                   else{
                     setMax(max+4);
