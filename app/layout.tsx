@@ -26,6 +26,19 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
+
+        <meta property="og:url" content="https://andreasbilly.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Billy's Portfolio" />
+        <meta property="og:description" content="Front End Developer Portfolio" />
+        <meta property="og:image" content="https://andreasbilly.com/preview.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="andreasbilly.com" />
+        <meta property="twitter:url" content="https://andreasbilly.com" />
+        <meta name="twitter:title" content="Billy's Portfolio" />
+        <meta name="twitter:description" content="Front End Developer Portfolio" />
+        <meta name="twitter:image" content="https://andreasbilly.com/preview.png" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
