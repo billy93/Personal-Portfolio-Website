@@ -20,6 +20,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" sizes="any" />
+        <meta name="title" content="Billy's Portfolio" />
+        <meta name="description" content="Front End Developer Portfolio" />
+        <meta name="keywords" content="frontend, fullstack, nextjs, software engineer, andreasbilly" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
