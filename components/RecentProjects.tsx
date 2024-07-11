@@ -1,7 +1,7 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
+import { useRouter } from 'next/navigation'
 import { projects, otherProjects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import { InfiniteWorkCards } from "./ui/InfiniteWorkCards";
@@ -10,8 +10,10 @@ import { useState } from "react";
 
 const RecentProjects = () => {
   const [max, setMax] = useState<number>(4);
+  const router = useRouter()
   const handleDivClick = (item: any) => {
-    window.open(item.link, '_blank');
+    // window.open(item.link, '_blank');
+    router.replace("/portfolio/1");
   };
   return (
     <section id="projects">
