@@ -22,10 +22,10 @@ const RecentProjects = () => {
           Here are my&nbsp;
           <span className="text-purple">Amazing Works</span>
         </h1>
-        <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+        <div className="flex flex-wrap items-center justify-center p-4 md:gap-16 mt-10">
           {projects.slice(0,max).map((item) => (
               <div onClick={() => handleDivClick(item)} 
-                className="h-[25rem] flex items-center justify-center sm:w-[36rem] w-[80vw] mt-20"
+                className="h-[25rem] flex items-center justify-center sm:w-[36rem] w-[80vw] mt-10 md:mt-20"
                 key={item.id}
               >
                 <PinContainer

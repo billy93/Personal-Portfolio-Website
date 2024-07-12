@@ -163,11 +163,11 @@ const PortfolioDetail = ({id}: any) => {
               <p className='my-4 mb-10 text-center'>Seamless, Convenient, and Effortless Mobility at Your Fingertips.</p>
             </div>
 
-            <div className='w-[70%]'>
+            <div className='w-[100%] md:w-[70%]'>
               <Carousel/>
             </div>
             
-            <div className='w-[70%] flex flex-col gap-10'>
+            <div className='w-[100%] md:w-[70%] flex flex-col gap-10'>
               <div>
                 <h1 className='font-bold text-3xl md:text-4xl'>Overview</h1>
                 <p className='my-4 font-light'>Morrent, our cutting-edge car rental application developed using the robust MERN stack, is revolutionizing the car rental industry. With a dynamic homepage showcasing featured vehicles, convenient pickup and drop-off locations, and a comprehensive list of available cars, It ensures a seamless and visually appealing experience for users.</p>
