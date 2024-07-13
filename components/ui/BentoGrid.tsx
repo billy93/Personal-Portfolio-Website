@@ -79,6 +79,8 @@ export const BentoGridItem = ({
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
+    
+      data-aos={id == 1 || id == 4 || id == 6 ? "slide-right" : "slide-left"}
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/

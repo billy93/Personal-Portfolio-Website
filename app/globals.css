@@ -90,3 +90,23 @@
     background-image: linear-gradient(to bottom, #ff0000, #ff517f, #ff97d2, #f8d1fc, #ffffff);
   }
 }
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #066bb8;
+  transform-origin: left;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #066bb8;
+  transform-origin: right;
+}

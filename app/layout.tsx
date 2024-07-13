@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { AnimatePresence } from "framer-motion";
+import AnimatePresenceClient from "@/components/ui/AnimatePresenceClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +26,7 @@ export default function RootLayout({
         <meta name="description" content="Front End Developer Portfolio" />
         <meta name="keywords" content="frontend, fullstack, nextjs, software engineer, andreasbilly" />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
 
         <meta property="og:url" content="https://andreasbilly.com" />
@@ -41,14 +43,16 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://andreasbilly.com/preview.png" />
       </head>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <AnimatePresenceClient>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </AnimatePresenceClient>
       </body>
     </html>
   );

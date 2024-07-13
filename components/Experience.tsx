@@ -28,8 +28,9 @@ const Experience = () => {
               }}
               // remove bg-white dark:bg-slate-900
               className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+              data-aos={index % 2 == 0 ? "slide-right" : "slide-left"}
             >
-              <div className="flex md:flex-row flex-col justify-center items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+              <div className="flex md:flex-row flex-col justify-center items-center p-3 py-6 md:p-5 lg:p-10 gap-2" >
                 <img
                   src={card.thumbnail}
                   alt={card.thumbnail}

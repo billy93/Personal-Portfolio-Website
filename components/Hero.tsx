@@ -3,10 +3,12 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { useEffect } from "react";
+import AOS from 'aos';
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36" data-aos={"zoom-in"}>
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight

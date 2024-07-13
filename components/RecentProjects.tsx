@@ -13,7 +13,7 @@ const RecentProjects = () => {
   const router = useRouter()
   const handleDivClick = (item: any) => {
     // window.open(item.link, '_blank');
-    router.replace("/portfolio/1");
+    router.replace(`/portfolio/${item.id}`);
   };
   return (
     <section id="projects">
@@ -22,9 +22,10 @@ const RecentProjects = () => {
           Here are my&nbsp;
           <span className="text-purple">Amazing Works</span>
         </h1>
-        <div className="flex flex-wrap items-center justify-center p-4 md:gap-16 mt-10">
-          {projects.slice(0,max).map((item) => (
+        <div className="flex flex-wrap items-center justify-center p-4 md:gap-16 gap-10 mt-10">
+          {projects.slice(0,max).map((item,i) => (
               <div onClick={() => handleDivClick(item)} 
+              data-aos={i % 2 == 0 ? "fade-left": "fade-right"}
                 className="h-[25rem] flex items-center justify-center sm:w-[36rem] w-[80vw] mt-10 md:mt-20"
                 key={item.id}
               >
@@ -34,7 +35,7 @@ const RecentProjects = () => {
                 >
                   <div className="relative flex items-center justify-center sm:w-[36rem] w-[80vw] overflow-hidden mb-10">
                     <img
-                      src={item.img}
+                      src={item.img[0]}
                       alt="cover"
                       className="z-10"
                     />
