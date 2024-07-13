@@ -91,7 +91,7 @@ export const projects = [
     challenge:"",
     future:"",
     des: "Developed the App for Amanyaman, a travel insurance company, enabling travel agents to offer various travel insurance plans. The application supports personal, family, and group insurance options for both domestic and international travel",
-    img: ["/porto1.png", "/porto1_1.png", "/porto1_2.png"],
+    img: ["/porto1.png", "/porto1_1.png", "/porto1_2.png", "/porto1_3.png", "/porto1_4.png"],
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/chakra.svg"],
     link: ["https://sales-amanyaman.vercel.app", "https://claim-amanyaman.vercel.app"],
   },
