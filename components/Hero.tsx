@@ -5,6 +5,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { useEffect } from "react";
 import AOS from 'aos';
+import { socialMedia } from "@/data";
 
 const Hero = () => {
   return (
@@ -58,9 +59,22 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-10 text-sm md:text-lg lg:text-2xl">
             Let&apos;s build something awesome together.
           </p>
+
+        <div className="flex items-center md:gap-3 gap-6 flex-wrap justify-center mb-10 md:mb-0">
+          {socialMedia.map((info) => (
+            <a  key={info.id} href={info.link} target="_blank">
+              <div
+               
+                className="w-auto h-10 p-5 cursor-pointer flex justify-center items-center bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              >
+                <img className="inline" src={info.img} alt="icons" width={20} height={20} />&nbsp;&nbsp;{info.name}
+              </div>
+            </a>
+          ))}
+        </div>
 
           <a href="#about">
             <MagicButton

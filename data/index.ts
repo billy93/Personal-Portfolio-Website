@@ -364,16 +364,25 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    name: "GitHub",
     link: "https://github.com/billy93"
   },
   {
     id: 2,
     img: "/twit.svg",
+    name: "Twitter",
     link: "https://x.com/billy_impact"
   },
   {
     id: 3,
     img: "/link.svg",
+    name: "LinkedIn",
     link: "https://linkedin.com/in/billy93"
+  },
+  {
+    id: 3,
+    img: "/ig.svg",
+    name: "Instagram",
+    link: "https://www.instagram.com/billy_impact"
   },
 ];
