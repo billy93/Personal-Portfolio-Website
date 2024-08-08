@@ -19,8 +19,7 @@ const RecentProjects = () => {
     <section id="projects">
       <div className="py-20">
         <h1 className="heading">
-          Here are my&nbsp;
-          <span className="text-purple">Amazing Works</span>
+          <span className="text-purple">Case Studies</span>
         </h1>
         <div className="flex flex-wrap items-center justify-center p-4 md:gap-16 gap-10 mt-10">
           {projects.slice(0, max).map((item, i) => (
