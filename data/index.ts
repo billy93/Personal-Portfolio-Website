@@ -78,6 +78,40 @@ export const getProjectById = (id: number) => {
 
 export const projects = [
   {
+    id: 0,
+    title: "AI Interview",
+    subtitle:
+      "AI-Powered Interview System for Streamlined Candidate Assessment",
+    overview: `AI Interview is an advanced AI-powered interview system designed to automate and enhance the hiring process. The platform leverages artificial intelligence to conduct structured interviews, evaluate candidate responses, and provide insightful assessments. Key features include:
+      - AI-driven interview sessions that adapt to user responses and assess technical and behavioral skills.
+      - Integration with Vapi AI for natural language understanding and response generation.
+      - Secure database storage and real-time updates using Google Firebase.
+      - A sleek and responsive frontend built with Next.js, Tailwind CSS, and TypeScript for a seamless user experience.
+      
+      This project was developed to help recruiters streamline their hiring processes by reducing manual efforts, improving candidate evaluations, and ensuring unbiased assessments.`,
+
+    problem: `Traditional interview processes often require significant time and resources, leading to inconsistencies in evaluations. Billy AI Interview was built to automate and standardize interviews using AI, making the hiring process more efficient, fair, and data-driven.`,
+
+    reflection: "",
+    learning: "",
+    challenge: "",
+    future: "",
+
+    des: "Developed an AI-driven interview platform that enables automated candidate assessments using Vapi AI. The system conducts structured interviews, analyzes responses, and provides feedback, helping recruiters make informed hiring decisions efficiently.",
+
+    img: ["/ai1.png", "/ai2.png", "/ai3.png", "/ai4.png"],
+
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      // "/vapi.svg",
+      // "/firebase.svg",
+    ],
+
+    link: ["https://billy-ai-interview.vercel.app"],
+  },
+  {
     id: 1,
     title: "Amanyaman Travel Insurance",
     subtitle:
